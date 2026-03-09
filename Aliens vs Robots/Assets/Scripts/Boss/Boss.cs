@@ -19,7 +19,10 @@ public class Boss : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        if (player == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player").transform;
+        }
 
         pooler = FindAnyObjectByType<ObjectPooler>();
     }

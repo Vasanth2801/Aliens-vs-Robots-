@@ -156,6 +156,7 @@ GameObject:
   - component: {fileID: 5140160744908890416}
   - component: {fileID: 6124828690396108040}
   - component: {fileID: 3041930786885895608}
+  - component: {fileID: 6108726933671489303}
   m_Layer: 0
   m_Name: EA 1
   m_TagString: Enemy
@@ -276,3 +277,17 @@ MonoBehaviour:
   fireRate: 1
   timer: 0
   firePoint: {fileID: 6891415650651812018}
+--- !u!114 &6108726933671489303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6964130593462150280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3779ddd71eb872459e0a69a8915efeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  maxHealth: 50
+  currentHealth: 0

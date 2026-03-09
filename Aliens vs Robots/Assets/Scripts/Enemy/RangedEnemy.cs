@@ -29,7 +29,10 @@ public class RangedEnemy : MonoBehaviour
     {
         timer = fireRate;
         point = GameObject.FindGameObjectWithTag("Point").transform;
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        if (player == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player").transform;
+        }
         pooler = FindAnyObjectByType<ObjectPooler>();
         rb = GetComponent<Rigidbody2D>();
     }

@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 4606933614289534203}
   - component: {fileID: 5939556323916911808}
   - component: {fileID: 3259381911121737900}
+  - component: {fileID: 5070537349179060760}
   m_Layer: 0
   m_Name: Boss
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,6 +102,20 @@ MonoBehaviour:
   player: {fileID: 0}
   fireRate: 1
   nextFireRate: 0
+--- !u!114 &5070537349179060760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444866795236933154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3779ddd71eb872459e0a69a8915efeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  maxHealth: 50
+  currentHealth: 0
 --- !u!1 &4582194464713582992
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,7 +15,7 @@ public class EnemySpawner : MonoBehaviour
     public Wave[] waves;
     [SerializeField] private float countDown;
     [SerializeField] private Transform[] spawnPoint;
-    [SerializeField] private int currentWave = 0;
+    public  int currentWave = 0;
     [SerializeField] private bool countDownBegin;
 
     void Start()

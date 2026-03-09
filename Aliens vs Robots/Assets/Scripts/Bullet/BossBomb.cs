@@ -6,7 +6,14 @@ public class BossBomb : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            collision.gameObject.SetActive(false);
+            PlayerHealth ph = collision.gameObject.GetComponent<PlayerHealth>();
+
+            if(ph != null)
+            {
+                ph.TakeDamage(80);
+            }
         }
+
+        gameObject.SetActive(false);
     }
 }
