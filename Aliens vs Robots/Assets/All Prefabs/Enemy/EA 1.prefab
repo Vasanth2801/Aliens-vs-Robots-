@@ -158,7 +158,7 @@ GameObject:
   - component: {fileID: 3041930786885895608}
   m_Layer: 0
   m_Name: EA 1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -265,10 +265,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84e5463f01f1ecc4397814f9d8ed0daf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RangedEnemy
-  bulletForce: 20
-  shootingRange: 10
-  facingDirection: 1
+  enemySpeed: 100
+  point: {fileID: 0}
   player: {fileID: 0}
-  firePoint: {fileID: 6891415650651812018}
+  rotationSpeed: 0.025
+  bulletSpeed: 10
+  rb: {fileID: 0}
+  distanceToShoot: 5
+  distanceToStop: 2
   fireRate: 1
-  nextFireTime: 0
+  timer: 0
+  firePoint: {fileID: 6891415650651812018}
